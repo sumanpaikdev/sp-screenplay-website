@@ -11,7 +11,7 @@ const BlogCard = ({ blog, blogo }) => (
           Posted on {blog.date}
         </p>
       </p>
-      <p className=" sm:text-lg text-md font-sans font-semibold my-1 capitalize">
+      <p className=" sm:text-md text-md font-sans font-semibold my-1 capitalize">
         <span className="text-[#603601] font-bold uppercase text-xs">{blog.category} | </span>{blog.title}
       </p>
       <p className="w-full text-justify text-sm sm:text-md leading-snug ">

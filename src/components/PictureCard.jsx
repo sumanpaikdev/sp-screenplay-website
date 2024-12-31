@@ -5,8 +5,8 @@ const PictureCard = ({ picture }) => (
   //   <p className="mt-2 text-center">{picture.description}</p>
   // </div>
   
-  <div className="scale-90 sm:scale-100 w-[310px] h-[480px] shadow-md bg-white sm:mx-2 relative mx-1 mb-4 sm:hover:-translate-y-6 duration-500 flex-none snap-center rounded-md overflow-hidden">
-    <div className="">
+  <div className="scale-90 sm:scale-100 w-[310px] h-[480px] shadow-md bg-white sm:mx-2 relative mx-0 mb-4 sm:hover:-translate-y-6 duration-500 flex-none snap-center rounded-md overflow-hidden">
+    <div>
       <img
         src={picture.url}
         alt="all need one"

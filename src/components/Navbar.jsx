@@ -1,13 +1,13 @@
 import React from "react";
 import "./Navbar.css";
 
-// logo 
-import profilePictureIcon from "../logopicture/sp.jpg"
-import gmailIcon from "../logopicture/communication.png"
-import aboutIcon from "../logopicture/user.png"
-import githubIcon from "../logopicture/github.png"
-import twitter from "../logopicture/twitter.png"
-import instagram from "../logopicture/instagram.png"
+// logo
+import profilePictureIcon from "../logopicture/sp.jpg";
+import gmailIcon from "../logopicture/communication.png";
+import aboutIcon from "../logopicture/user.png";
+import githubIcon from "../logopicture/github.png";
+// import twitter from "../logopicture/twitter.png";
+// import instagram from "../logopicture/instagram.png";
 
 const Navbar = () => (
   <div className="pb-2">
@@ -20,7 +20,11 @@ const Navbar = () => (
       <div>
         <ul className="flex items-center">
           <li>
-            <img src={profilePictureIcon} alt="img" className="w-10 rounded-full" />
+            <img
+              src={profilePictureIcon}
+              alt="img"
+              className="w-10 rounded-full"
+            />
           </li>
         </ul>
       </div>
@@ -30,7 +34,7 @@ const Navbar = () => (
         <p className="font-philo sm:text-6xl text-3xl sm:pt-0 pt-4">
           <span className="text-[#794d18]">StoryPlay</span>.SCREENPLAY
         </p>
-        <p className="sm:w-80 w-60 sm:text-lg text-xs mt-6 flex justify-center text-black">
+        <p className="sm:w-80 w-60 sm:text-lg text-xs mt-6 flex justify-center text-black font-sans">
           MOVIES <b className="text-[#794d18] mx-2">|</b> WEB SERIES
         </p>
         <div className="flex sm:flex-row flex-row justify-center mt-10">
@@ -45,31 +49,30 @@ const Navbar = () => (
             onClick="/#"
             className="flex flex-row items-center justify-center rounded ml-2 px-5 sm:mb-0 mb-3 py-3 text-sm font-semibold bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] to-[#603601] hover:-translate-y-1 hover:scale-110 duration-500 shadow-lg text-white"
           >
-           <img className="invert w-6 mr-2" src={aboutIcon} alt="user" /> About Me
+            <img className="invert w-6 mr-2" src={aboutIcon} alt="user" /> About
+            Me
           </button>
         </div>
-        <div className="flex flex-row items-center justify-center sm:pt-4">
-        <a
-            className="flex flex-row items-center justify-center mr-4 px-4 sm:mb-0 mb-6 py-3 text-sm font-semibold bg-white rounded  duration-500 shadow-md text-black hover:-translate-y-1 hover:scale-110"
+        <div className="flex flex-row  justify-between sm:pt-4">
+          <a
+            className="flex flex-row items-center justify-center mr-4 px-4 sm:mb-0 mb-6 py-3 text-sm font-semibold bg-black rounded  duration-500 shadow-md text-white hover:-translate-y-1 hover:scale-110"
             href="mailto:reachout.suman@gmail.com"
           >
-            <img className="w-6 mr-2" src={githubIcon} alt="gmail" />
-           Repository
+            <img className="w-6 mr-2 invert" src={githubIcon} alt="gmail" />
+            GitHub Repository
+          </a>
+          {/* <a
+            className="flex flex-row items-center justify-center mr-2 px-2 sm:mb-0 mb-6 py-2 text-sm font-semibold bg-white rounded  duration-500 shadow-md text-black hover:-translate-y-1 hover:scale-110"
+            href="mailto:reachout.suman@gmail.com"
+          >
+            <img className="w-8 " src={twitter} alt="x" />
           </a>
           <a
-            className="flex flex-row items-center justify-center mr-4 px-4 sm:mb-0 mb-6 py-3 text-sm font-semibold bg-white rounded  duration-500 shadow-md text-black hover:-translate-y-1 hover:scale-110"
+            className="flex flex-row items-center justify-center px-2 sm:mb-0 mb-6 py-2 ml-2 text-sm font-semibold bg-white rounded duration-500 shadow-md text-black hover:-translate-y-1 hover:scale-110"
             href="mailto:reachout.suman@gmail.com"
           >
-            <img className="w-6 " src={twitter} alt="gmail" />
-            {/* GitHub Repository */}
-          </a>
-          <a
-            className="flex flex-row items-center justify-center px-4 sm:mb-0 mb-6 py-3 ml-2 text-sm font-semibold bg-white rounded  duration-500 shadow-md text-black hover:-translate-y-1 hover:scale-110"
-            href="mailto:reachout.suman@gmail.com"
-          >
-            <img className="w-6 " src={instagram} alt="gmail" />
-            {/* GitHub Repository */}
-          </a>
+            <img className="w-8 " src={instagram} alt="insta" />
+          </a> */}
         </div>
       </div>
     </div>
@@ -77,6 +80,5 @@ const Navbar = () => (
 );
 
 export default Navbar;
-
 
 // bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))]  hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] to-[#603601]
