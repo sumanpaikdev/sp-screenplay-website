@@ -1,0 +1,56 @@
+{
+  "pictures": [
+    {
+      "id": 1,
+      "url": "/images/demoimg.jpg",
+      "title": "The First title",
+      "description": "Picture 1 description is very clear"
+    },
+    {
+      "id": 2,
+      "url": "/images/demoimg.jpg",
+      "title": "The First title",
+      "description": "Picture 2 description"
+    },
+    {
+      "id": 3,
+      "url": "/images/demoimg.jpg",
+      "title": "The First title",
+      "description": "Picture 3 description"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Blog Title 1",
+      "category": "movie",
+      "date": "Dec 2, 2024",
+      "description": "LEV, a mysterious man with a dark past, becomes the guardian of an orphaned girl, LEELA. When he saves MIRA, a lady detective, from dangerous criminals, she uncovers his deadly secret while investigating a murder—and unexpectedly becomes the mother LEELA needs.",
+      "details": "Blog 1 full content",
+      "image": "/images/blog1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Blog Title 2",
+      "category": "web series",
+      "date": "Dec 2, 2024",
+      "description": "A mysterious boy who lives in a lake saves a little girl's life, causing him to lose his true identity. Twenty years later, as adults, the two are drawn back together by a crime event, and the boy saves the girl’s life again, unlocking his lost memories. and returning to the lake that is his true home. loremwho lives in a lake saves a little girl's life, causing him to lose his true identity.",
+      "details": "Blog 2 full content",
+      "image": "/images/blog2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Blog Title 3",
+      "category": "movie",
+      "date": "Dec 2, 2024",
+      "description": "A mysterious boy who lives in a lake saves a little girl's life, causing him to lose his true identity. Twenty years later, as adults, the two are drawn back together by a crime event, and the boy saves the girl’s life again, unlocking his lost memories. and returning to the lake that is his true home. loremwho lives in a lake saves a little girl's life, causing him to lose his true identity.",
+      "details": "Blog 3 full content",
+      "image": "/images/blog2.jpg"
+    }
+  ],
+  "popup": {
+    "title": "Upcoming Post",
+    "description": "Latest post details...",
+    "image": "/images/upcoming.jpg"
+  }
+}
