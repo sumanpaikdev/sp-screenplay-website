@@ -12,9 +12,9 @@ const BlogCard = ({ blog, blogo }) => (
         </p>
       </p>
       <p className=" sm:text-md text-md font-sans font-semibold my-1 capitalize">
-        <span className="text-[#603601] font-bold uppercase text-xs">{blog.category} | </span>{blog.title}
+        <span className="text-[#603601] font-bold uppercase text-sm">{blog.category} | </span>{blog.title}
       </p>
-      <p className="w-full text-justify text-sm sm:text-md leading-snug ">
+      <p className="w-full text-justify text-md sm:text-md leading-tight ">
         {blog.description}
       </p>
 
