@@ -3,7 +3,7 @@ import PictureCard from "./PictureCard";
 import data from "../data/data.json";
 
 const SecondContainer = () => (
-  <div className="sm:mt-6 sm:pt-8 pt-6">
+  <div className="sm:mt-6 sm:pt-8 pt-4">
     <p className="sm:text-2xl text-xl font-philo text-center sm:mb-2 ">
       Active Projects
     </p>
