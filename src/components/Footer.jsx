@@ -4,14 +4,14 @@ import githubLogo from "../logopicture/github.png"
 const Footer = () => (
   <footer className="flex sm:flex-row flex-col justify-center items-center text-gray-800 text-sm py-8 rounded-t-xl">
     <div className="flex flex-col items-center justify-center">
-      <p className="text-lg font-philo flex items-center justify-center">
+      <p className="text-lg font-philo flex items-center justify-center bg-gradient-to-r from-black via-black to-rose-600 text-transparent bg-clip-text">
         Sp.SCREENPLAY{" "}
         <a href="/" className="ml-4">
           {" "}
           <img
             src={githubLogo}
             alt="github"
-            className=" w-8 hover:scale-110 duration-200"
+            className=" w-8 hover:scale-110 duration-200 animate-pulse"
           />
         </a>
       </p>

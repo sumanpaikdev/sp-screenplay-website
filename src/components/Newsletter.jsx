@@ -30,9 +30,9 @@ const FourthContainer = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className=" shadow rounded border-2 border-gray-300 text-md focus:outline-none px-4 py-1 focus:ring ring-[#603601]"
+              className=" shadow rounded border-2 border-gray-300 text-md focus:outline-none px-4 py-1 focus:ring ring-rose-600"
             />
-            <button className="shadow-md bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))]  hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] to-[#603601] px-8 py-3 rounded text-sm duration-200 active:bg-[#603601] font-semibold text-gray-100 mt-4 mb-6">
+            <button className="shadow-md bg-gradient-to-r from-black via-black to-rose-600 px-8 py-3 rounded text-sm duration-200 font-semibold text-gray-100 mt-4 mb-6">
               Subscribe
             </button>
           </form>

@@ -3,20 +3,26 @@
     {
       "id": 1,
       "url": "/images/demoimg.jpg",
-      "title": "The First title",
-      "description": "Picture 1 description is very clear"
+      "title": "The First title from the dark world",
+      "type": "Web Series",
+      "description": "Action Drama, Suspense & crime",
+      "status": "Active Project"
     },
     {
       "id": 2,
       "url": "/images/demoimg.jpg",
-      "title": "The First title",
-      "description": "Picture 2 description"
+      "title": "The First title from the dark world",
+      "type": "Web Series",
+      "description": "Action Drama,",
+      "status": "Active Project"
     },
     {
       "id": 3,
       "url": "/images/demoimg.jpg",
-      "title": "The First title",
-      "description": "Picture 3 description"
+      "title": "The First title from the dark world",
+      "type": "Web Series",
+      "description": "Action Drama, Suspense & crime",
+      "status": "Active Project"
     }
   ],
   "blogs": [

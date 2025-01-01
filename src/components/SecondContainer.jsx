@@ -3,18 +3,20 @@ import PictureCard from "./PictureCard";
 import data from "../data/data.json";
 
 const SecondContainer = () => (
-  <div className="sm:mt-6 sm:pt-8 pt-3 scale-95 sm:scale-100">
-    <p className="sm:text-2xl text-xl font-philo text-center sm:mb-2 ">
+  <div>
+    {/* <p className="sm:text-2xl text-xl font-philo text-center my-2 sm:my-2 sm:pt-6">
       Active Projects
-    </p>
-    <div className="flex overflow-x-auto sm:px-4 sm:py-4 px-0 py-3 sm:justify-center no-scrollbar snap-x sm:pt-6">
-      {data.pictures.map((picture) => (
-        <PictureCard key={picture.id} picture={picture} />
-      ))}
+    </p> */}
+    <div className="">
+      <div className="flex overflow-x-auto sm:justify-center no-scrollbar snap-x py-7">
+        {data.pictures.map((picture) => (
+          <PictureCard key={picture.id} picture={picture} />
+        ))}
+      </div>
+      <p className="sm:text-2xl text-xl sm:pt-4 sm:pb-8 pb-6 font-philo text-center bg-gradient-to-r from-black via-black to-rose-600 text-transparent bg-clip-text">
+        Screenplay : Movies | Web Series
+      </p>
     </div>
-    <p className="sm:text-2xl text-xl sm:pt-4 sm:pb-8 pb-6 font-philo text-center">
-      Screenplay : Movies | Web Series
-    </p>
   </div>
 );
 

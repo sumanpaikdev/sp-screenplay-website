@@ -42,26 +42,26 @@ const BlogDetails = () => {
         <a
           href={blog.pdf1} // Path to the first PDF
           download
-          className=" text-white py-3 px-4 rounded bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] hover:shadow-md to-[#603601] transition flex flex-row items-center justify-center mr-1"
+          className=" text-white py-3 px-4 rounded bg-gradient-to-r from-black via-black to-rose-600 transition flex flex-row items-center justify-center mr-1"
         >
-          Treatment <img className=" w-6 ml-2 invert" src={downloadIcon} alt="bck" />
+          Treatment <img className=" w-6 ml-2 invert animate-bounce" src={downloadIcon} alt="bck" />
         </a>
 
         {/* Download Button for PDF 2 */}
         <a
           href={blog.pdf2} // Path to the second PDF
           download
-          className=" text-white py-3 px-4 rounded bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] to-[#603601] hover:shadow-md transition flex flex-row items-center justify-center ml-1"
+          className=" text-white py-3 px-4 rounded bg-gradient-to-r from-black via-black to-rose-600 transition flex flex-row items-center justify-center ml-1"
         >
-          Screenplay <img className=" w-6 ml-2 invert" src={downloadIcon} alt="bck" />
+          Screenplay <img className=" w-6 ml-2 invert animate-bounce" src={downloadIcon} alt="bck" />
         </a>
       </div>
       <p className="text-md font-semibold">SYNOPSIS:</p>
       <p className="mt-2 max-w-[800px] text-md text mx-2">{blog.details}</p>
       <Link
         to="/"
-        className="flex flex-row items-center justify-center px-3 py-3 rounded-md bg-gray text-white opacity-90 text-md mt-4 mb-21 border-2 bg-gray-900 sm:hover:-translate-x-4 duration-500 ">
-        <img className=" w-4 mr-3 invert" src={backIcon} alt="bck" /> Back to Main Page
+        className="flex flex-row items-center justify-center px-3 py-3 rounded-md bg-gray text-white opacity-90 text-md mt-4 mb-21 border-2 bg-gray-900 sm:hover:-translate-x-4 duration-300 ">
+        <img className=" w-4 mr-3 invert animate-pulse" src={backIcon} alt="bck" /> Back to Main Page
       </Link>
     </div>
   );

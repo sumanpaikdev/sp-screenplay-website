@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         philo: ["Philosopher", "sans"]
-      }
+      },
     },
   },
   plugins: [],

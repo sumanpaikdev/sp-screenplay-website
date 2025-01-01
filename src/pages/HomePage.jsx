@@ -72,7 +72,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="w-full h-full bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#ffe6be] via-[#ffedcd] to-[#ffffff]">
+    <div className="w-full h-full bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#ffcad6] via-[#ffe9f0] to-[#ffffff]">
       <Navbar />
       <SecondContainer />
       <ThirdContainer />
