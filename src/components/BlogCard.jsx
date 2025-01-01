@@ -48,7 +48,7 @@ const BlogCard = ({ blog, blogo }) => {
             className="shadow-md bg-gradient-to-r from-black via-black to-rose-600 sm:hover:translate-x-4 duration-300  px-3 py-4 rounded text-sm font-semibold text-gray-100 flex flex-row items-center justify-center"
           >
             See Details & Download Screenplay
-            <img src={blogo} alt=">" className="w-[18px] pl-2 invert ml-1" />
+            {/* <img src={blogo} alt=">" className="w-[18px] pl-2 invert ml-1" /> */}
           </Link>
           
           {/* Share Button */}
