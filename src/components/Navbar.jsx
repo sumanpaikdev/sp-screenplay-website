@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 
+import { Link } from "react-router-dom";
+
 // logo
 import profilePictureIcon from "../logopicture/sp.jpg";
 import gmailIcon from "../logopicture/communication.png";
@@ -45,13 +47,13 @@ const Navbar = () => (
             <img className="w-6 mr-2" src={gmailIcon} alt="gmail" />
             Send Email
           </a>
-          <button
-            onClick="/#"
+          <Link
+            to="/about"
             className="flex flex-row items-center justify-center rounded ml-2 px-5 sm:mb-0 mb-3 py-3 text-sm font-semibold bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] hover:bg-gradient-to-br from-[#1c0a00] via-[#361500] to-[#603601] hover:-translate-y-1 hover:scale-110 duration-500 shadow-lg text-white"
           >
             <img className="invert w-6 mr-2" src={aboutIcon} alt="user" /> About
             Me
-          </button>
+          </Link>
         </div>
         <div className="flex flex-row  justify-between sm:pt-4">
           <a
