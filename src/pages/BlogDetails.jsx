@@ -14,12 +14,16 @@ const BlogDetails = () => {
     <div className="px-2 sm:py-[2rem] py-4 font-sans flex flex-col items-center justify-center pb-6">
       <div className="w-[18rem] h-[18rem] flex justify-center items-center overflow-hidden rounded shadow-md">
         <img src={blog.image} alt={blog.title} className="" />
+        
       </div>
       <div className="py-6 px-2 mx-2 ">
+      <p className="text-center font-semibold bg-gradient-to-r from-black via-rose-600 to-rose-600 text-transparent bg-clip-text uppercase text-sm mt-0 mb-1 animate-pulse">
+        {blog.category}
+      </p>
         <div className="flex flex-col items-center justify-center">
           <p className="uppercase font-semibold text-md pb-6 flex flex-col items-center justify-center">
-            {blog.category}: {blog.title}
-            <p className="text-md font-normal capitalize pt-1">{blog.genre}</p>
+            {blog.title} <br />
+            <span className="text-md font-normal capitalize pt-1">{blog.genre}</span>
           </p>
           <p>Story by: {blog.storyBy}</p>
           <p className="pb-6">Screenplay by: {blog.screenplayBy}</p>
