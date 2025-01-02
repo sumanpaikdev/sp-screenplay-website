@@ -30,7 +30,7 @@ const AboutMe = () => {
       </p>
       <div className="flex flex-col justify-center items-center sm:pt-4">
         <a
-          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-y-1 hover:scale-110 w-[300px]"
+          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-x-1 hover:scale-105 w-[300px]"
           href="https://x.com/sumanpaik_"
         >
           <img
@@ -41,7 +41,7 @@ const AboutMe = () => {
           Twitter @sumanpaik_
         </a>
         <a
-          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-y-1 hover:scale-110 w-[300px]"
+          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-x-1 hover:scale-105 w-[300px]"
           href="https://www.instagram.com/sumanpaik_/"
         >
           <img
@@ -52,14 +52,14 @@ const AboutMe = () => {
           Instagram @sumanpaik_
         </a>
         <a
-          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-y-1 hover:scale-110 w-[300px]"
+          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-x-1 hover:scale-105 w-[300px]"
           href="mailto:reachout.suman@gmail.com"
         >
           <img className="w-6 ml-[5px] mr-3" src={gmllogo} alt="gmail" />
           Suman Paik
         </a>
         <a
-          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-y-1 hover:scale-110 w-[300px]"
+          className="flex flex-row items-center justify-start mb-1 px-4 py-3 text-sm font-semibold bg-gradient-to-r from-black via-black to-rose-600 rounded  duration-300 shadow-md text-white hover:-translate-x-1 hover:scale-105 w-[300px]"
           target="_black"
           href="https://github.com/sumanpaikdev"
         >

@@ -17,11 +17,11 @@ const PictureCard = ({ picture }) => (
       </div>
     </div>
     <div className="px-6 sm:py-4 py-2 flex flex-col justify-center items-center">
-      <p className="mt-8 text-sm sm:text-md text-center font-semibold text-gray-700 uppercase"><span className="text-rose-600">{picture.type} |</span> {picture.title}</p>
+      <p className="mt-8 text-sm sm:text-md text-center font-semibold text-gray-700 uppercase"><span className="bg-gradient-to-r from-black via-rose-600 to-rose-600 text-transparent bg-clip-text">{picture.type} |</span> {picture.title}</p>
       <p className="text-center text-gray-700 text-sm">
         {picture.description}
       </p>
-      <p className="text-center font-semibold bg-gradient-to-r from-black via-rose-600 to-rose-600 text-transparent bg-clip-text uppercase text-sm mt-3 animate-pulse">
+      <p className="text-center font-semibold text-rose-600 uppercase text-sm mt-3 animate-pulse">
         {picture.status}
       </p>
     </div>

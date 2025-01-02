@@ -1,5 +1,12 @@
 import React from "react";
 
+import whatsapp from "../logopicture/whatsapp.png"
+import mailicon from "../logopicture/mail.png"
+import copylink from "../logopicture/copy.png"
+import closelink from "../logopicture/close.png"
+
+
+
 const SharePopup = ({ link, onClose }) => {
   const encodedLink = encodeURIComponent(link);
 
@@ -14,48 +21,52 @@ const SharePopup = ({ link, onClose }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
       <div className="bg-white p-6 rounded-md w-80">
-        <h2 className="text-xl font-bold mb-4">Share This Post</h2>
-        <p className="mb-4">Copy the link or share via your favorite platform:</p>
+        <h2 className="text-md font-bold mb-4">Share This Post</h2>
+        <p className="mb-4 text-sm">Copy the link or share via your favorite platform:</p>
         
         {/* Copy Link */}
-        <div className="mb-4">
+        <div className="mb-4 flex flex-col items-center justify-center">
           <input
             type="text"
             readOnly
             value={link}
-            className="w-full p-2 border border-gray-300 rounded-md"
+            className="w-full p-2 border border-gray-300 outline-none rounded-md text-sm"
           />
+          <div className="w-full flex flex-row items-center justify-start">
+
           <button
             onClick={() => navigator.clipboard.writeText(link)}
-            className="mt-2 w-full bg-blue-500 text-white p-2 rounded-md"
+            className="mt-2 w-1/2 mr-1 bg-rose-600 shadow-md text-white p-3 rounded-md text-sm flex flex-row items-center justify-center "
           >
-            Copy Link
+            Copy Link<img className="w-4 ml-4 invert animate-bounce" src={copylink} alt="cpy" />
           </button>
+          <button
+          onClick={onClose}
+          className="mt-2 w-1/2 ml-1 bg-black shadow-md text-white p-3 rounded-md text-sm flex flex-row items-center justify-center"
+        >
+          Close<img className="w-3 ml-4 invert animate-pulse" src={closelink} alt="cls" />
+        </button>
+          </div>
         </div>
 
         {/* Share Options */}
         <div className="flex gap-4">
           <button
             onClick={shareOnWhatsApp}
-            className="bg-green-500 text-white p-2 rounded-md w-24"
+            className="rounded-md w-auto py-2 px-3 bg-green-100 hover:shadow-md duration-300 hover:bg-green-200 text-green-600 text-sm flex flex-row items-center justify-center"
           >
-            WhatsApp
+          <img className="w-6 mr-2" src={whatsapp} alt="wp" /> WhatsApp
           </button>
           <button
             onClick={shareOnEmail}
-            className="bg-blue-500 text-white p-2 rounded-md w-24"
+            className="rounded-md w-auto py-2 px-3 bg-blue-100 hover:shadow-md duration-300 hover:bg-blue-200 text-blue-600 text-sm flex flex-row items-center justify-center"
           >
-            Email
+            <img className="w-6 mr-2" src={mailicon} alt="@" /> Email
           </button>
         </div>
 
         {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="mt-4 w-full bg-gray-400 text-white p-2 rounded-md"
-        >
-          Close
-        </button>
+        
       </div>
     </div>
   );
